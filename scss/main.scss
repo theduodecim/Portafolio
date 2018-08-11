@@ -1,5 +1,75 @@
-$primary-color: #444;
+@import 'config';
+//core style
+* {
+    box-sizing: border-box; // this will set the elements to boxsizing as a primal sizing
+}
+
 body {
+    @include background;
     background: $primary-color;
     color: #fff;
+    height: 100%; // full & of height
+    margin: 0; // no margin
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; // font family change
+    line-height: 1.5; // space between lines
+}
+
+//headings
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-weight: 400; // change the tinier of the font
+    // adding & will call every header tag with this class
+    &.lg-heading {
+        font-size: 6rem; // rem is a multiplier of the html font sizes default sizes is 16 pixels 1 rem will be 16
+    }
+    &.sm-heading {
+        margin-bottom: 2rem;
+        padding: 0.2rem 1rem;
+        background: rgba(lighten($primary-color, 2), 0.5); // methods of Sass lighten is a function
+        //that takes two parameters the color and the intensity
+        //with lighten alone will block out the image so we add this method inside of rgb
+        //wrapped it
+    }
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    position: fixed; // the burger button will always stays on the top
+    z-index: 2; // how close to you an element is 
+    width: 100%;
+}
+
+.text-secondary {
+    color: $secondary-color;
+}
+
+main {
+    padding: 4rem; // all it's in the main will have 4 rem padding
+    height: 100%;
+    .icons {
+        // this will affects only the icons inside of the main tag
+        margin-top: 1rem;
+        a {
+            // each icon has a tag
+            padding: 0.4rem;
+            &:hover {
+                // & within
+                color: $secondary-color;
+                @include easeOut();
+            }
+        }
+    }
+    &#home {
+        // here we are giving attributes only the main with the id home.
+        overflow: hidden; // no scroll bars.
+        h1 {
+            margin-top: 20vh; // if 100px height 20vh will take 20 of that slices.
+        }
+    }
 }

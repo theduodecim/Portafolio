@@ -1,3 +1,4 @@
+@import 'config';
 // Menu Button
 .menu-btn {
     position: absolute;
@@ -5,14 +6,14 @@
     right: 35px;
     top: 35px;
     cursor: pointer;
-    @include easeOut; // transition mix out
+    @include easeOut(); // transition mix out
     .btn-line {
         // each of the lines of the burger button
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
         background: #fff;
-        @include easeOut;
+        @include easeOut();
     } //Rotate Into X With Menu Lines
     &.close {
         transform: rotate(180deg);
@@ -20,14 +21,113 @@
             // lines of the burger
             // Line 1  - Rotate
             &:nth-child(1) {
+                //nth-child is a selector that takes a child of a parend class
                 transform: rotate(45deg) translate(10px);
             } // Line 2  - Rotate
             &:nth-child(2) {
+                //nth-child is a selector that takes a child of a parend class
                 opacity: 0;
             } // Line 3  - Rotate
             &:nth-child(3) {
+                //nth-child is a selector that takes a child of a parend class
                 transform: rotate(-45deg) translate(10px, -2px);
             }
         }
     }
+}
+
+//menu Overylay
+.menu {
+    position: fixed; // to follow nav scroll
+    top: 0; // full top
+    width: 100%; // full width
+    opacity: 0.98; //see through
+    visibility: hidden; // we no longer see it
+    &.show {
+        // this is for the class we are adding when the button
+        //is pressed
+        visibility: visible;
+    }
+    &-branding,
+    &-nav {
+        // we dont need to call the entired class
+        //because we are calling inside of menu super class
+        display: flex; // will convert it in a colum
+        flex-flow: column wrap; //is going to up and down insted of right and left 
+        align-items: center;
+        justify-content: center; // align verticaly and horizontally 
+        float: left; // the position of 50% nav will stay on the right
+        width: 50%;
+        height: 100vh; // both sides grey and black 
+        overflow: hidden; // never scroll bars
+    }
+    &-nav {
+        margin: 0;
+        padding: 0;
+        background: darken($primary-color, 5); // background darken with opacity 5
+        list-style: none; // no balls - for the list 
+        transform: translate3d(0, -100%, 0); // this alone will put off the page so
+        // right now (0,-100%, 0) the translate3d will come from the top
+        // if we put 100% this will come from the button
+        @include easeOut(); // we want the transition mix out
+        &.show {
+            //Slide in from top
+            transform: translate3d(0, 0, 0);
+        }
+    } //Branding Side
+    &-branding {
+        height: 100vh;
+        background: $primary-color; // both sides grey and black 
+        transform: translate3d(0, 100%, 0);
+        @include easeOut();
+        &.show {
+            //Slide in from bottom
+            transform: translate3d(0, 0, 0);
+        }
+        .portrait {
+            width: 250px;
+            height: 250px;
+            background: url(http://i65.tinypic.com/11so3fq.jpg);
+            background-position: -10px;
+            border-radius: 50%;
+            border: solid 3px $secondary-color; //border takes style(solid) size(3px)
+            // and a color($secondary-color)
+        }
+    } //still within the menu
+    .nav-item {
+        transform: translate3d(600px, 0, 0); //now all the items are slide like slide with the snow
+        //we need each one
+        @include easeOut; // ease out from config mixing
+        &.show {
+            //Slide in from bottom
+            transform: translate3d(0, 0, 0);
+        }
+        &.current>a {
+            color: $secondary-color;
+        }
+    }
+    .nav-link {
+        // styling the links
+        display: inline-block; // img for this ssas folder
+        position: relative;
+        font-size: 30px; // font more biger 
+        text-transform: uppercase; // mayuscula
+        padding: 1rem 0; // padding only left and right
+        font-weight: 300; // a bit of weight
+        color: #fff; // white color
+        text-decoration: none; // no decoration no color of links
+        @include easeOut; // transition of easeOut
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
+
+//Delay Each nav item slide by 0.1s
+//this is like in js for(let i = 0, i < 4; i++); as long i is 0 pluss i++ 
+@for $x from 1 through 4 {
+    .nav-item:nth-child(#{$x}) {
+        // to add a variable inside of a nth selector is (#{$variable})
+        transition-delay: $x * 0.1s; // for each link will be a transition delay now each one will come separately
+    } //nth-child is a selector that takes a child of a parend class
 }

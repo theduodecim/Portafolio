@@ -31,6 +31,21 @@ $background-opacity: 0.6;
     }
 }
 
+//To return anything inside of SCSS Has to be a function not a Mixing
+//So below here will change the color of the fonts if the background is white
+//Set Text Color
+//Set Text Color 
+@function set-text-color($color) {
+    // thakes a color
+    @if (lightness($color) > 40) {
+        //lightness is a constant method
+        @return black;
+    }
+    @else {
+        @return #fff;
+    }
+}
+
 // Media Query Mixins for sizings
 @mixin mediaSm {
     @media screen and (max-width: 500px) {

@@ -12,7 +12,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: #fff;
+        background: set-text-color($primary-color);
         @include easeOut();
     } //Rotate Into X With Menu Lines
     &.close {
@@ -87,7 +87,7 @@
         .portrait {
             width: 250px;
             height: 250px;
-            background: url(http://i65.tinypic.com/11so3fq.jpg);
+            background: url(../img/portrait.jpg);
             background-position: -10px;
             border-radius: 50%;
             border: solid 3px $secondary-color; //border takes style(solid) size(3px)
@@ -114,7 +114,7 @@
         text-transform: uppercase; // mayuscula
         padding: 1rem 0; // padding only left and right
         font-weight: 300; // a bit of weight
-        color: #fff; // white color
+        color: set-text-color($primary-color); // white color
         text-decoration: none; // no decoration no color of links
         @include easeOut; // transition of easeOut
         &:hover {

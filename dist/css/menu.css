@@ -40,7 +40,7 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: #0b3244;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
@@ -48,7 +48,7 @@
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     height: 100vh;
-    background: #444;
+    background: #0e425a;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {

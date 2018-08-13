@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Resposive Portafolio Website",
   "main": "index.js",
-  "homepage": "https://github.com/theduodecim/Portafolio",
+  "homepage": "https://github.com/theduodecim/portafolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
@@ -15,6 +15,7 @@
   "author": "Juan Sebastian Cabrera",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "node-sass": "^4.9.2"
   }
 }

@@ -1,8 +1,16 @@
 //Widescreens
-@include mediaXl {}
+@include mediaXl {
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 
 // Desktops 6 Laptops 
-@include mediaLg {}
+@include mediaLg {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 // Tablets & Small Laptops
 @include mediaMd {
@@ -43,6 +51,9 @@
         grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
         grid-template-columns: 1fr;
     }
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 // Smartphones 
@@ -50,5 +61,8 @@
     main#home h1 {
         // this margin top is important when the screen get small from the top to bottom
         margin-top: 10vh; // so this h1 juan s cabrera
+    }
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

@@ -11,36 +11,36 @@
         crossorigin="anonymous">
 </head>
 
-<body>
+<body onload="about()">
     <header>
         <div class="menu-btn">
             <div class="btn-line"></div>
             <div class="btn-line"></div>
             <div class="btn-line"></div>
         </div>
-
+        <div class="es">ES</div>
         <nav class="menu">
             <div class="menu-branding">
                 <div class="portrait"></div>
             </div>
             <ul class="menu-nav">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">
+                    <a id="homelink" href="index.html" class="nav-link">
                         Home
                     </a>
                 </li>
                 <li class="nav-item current">
-                    <a href="about.html" class="nav-link">
+                    <a id="aboutMelink" href="about.html" class="nav-link">
                         About Me
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="work.html" class="nav-link">
+                    <a id="myWorklink" href="work.html" class="nav-link">
                         My Work
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="contact.html" class="nav-link">
+                    <a id="howtoReachMelink" href="contact.html" class="nav-link">
                         How to Reach Me
                     </a>
                 </li>
@@ -62,7 +62,7 @@
 
             <div class="bio">
                 <h3 class="text-secondary">BIO</h3>
-                <p>
+                <p id="biotext">
                     I am a dedicated and committed person to finish a job in conditions. I have great knowledge in Software and Hardware, this
                     allows me to detect the problem quickly and keeping patience on all things, I am willing to expand my
                     knowledge of development and web applications according to the requirements of the given project.
@@ -72,7 +72,7 @@
             <div class="job job-1">
                 <h3>Trekkie chat Web Android Application</h3>
                 <h6 class="text-secondary">Full Stack Developer</h6>
-                <p> Creator of trekkiechat, an application made in Ionic, with the following specifications: Start of internal
+                <p id="trekkie"> Creator of trekkiechat, an application made in Ionic, with the following specifications: Start of internal
                     session and registration with Firebase. Google authentication to store in your profile Personal images
                     and edit your name. Chat in real time with all registered users, they can also add friends to chat individually.
                     This application uses Firebase RealTimeDatebase to host users, requets, chats and images. I made this
@@ -84,21 +84,23 @@
             <div class="job job-2">
                 <h3>Programmer</h3>
                 <h6 class="text-secondary">Solution Provider</h6>
-                <ul style="text-align: left">Working on Environments like :
+                <ul style="text-align: left">
+                    <p id="enviroments">Working on Environments like :</p>
                     <li>Angular 2, 4, 5, 6</li>
                     <li>Javascript, Jquery, Typescript</li>
                     <li>Phonegap & Ionic 3</li>
                     <li>CSS, SCSS, Material , Materialize , Bootstrap 3, 4, Phaser 3</li>
-                    <li>NodeJS, Ajax , Mysql , mariaDB , JSON , Firebase, FireStore, GIT , Bitbucket</li>
+                    <li>PHP, NodeJS, Ajax , Mysql , mariaDB , JSON , Firebase, FireStore, GIT , Bitbucket</li>
                     <li>Google Cloud Plataform, Visual Studio Code, WebStorm , Eclipse photon - oxygen, Android Studio, AMPPS</li>
                 </ul>
             </div>
 
             <div class="job job-3">
-                <h3>Working Arround the World</h3>
+                <h3 id="workingarroundtitle">Working Arround the World</h3>
                 <h6 class="text-secondary"> Entrepreneur </h6>
-                <p>Working arround the world with clients from Honduras, Argentina & German.
-                    <p>Professionally Speaking with order and clarity & Professionally Structure Programing writing.</p>
+                <p id="workingarround">
+                    Working arround the world with clients from Honduras, Argentina & German. Professionally Speaking with order and clarity
+                    & Professionally Structure Programing writing.
                 </p>
             </div>
         </div>

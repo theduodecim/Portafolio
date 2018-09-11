@@ -59,7 +59,7 @@ function toggleMenu() {
 
 es.addEventListener("click", function () {
   ChangeToES();
-  infoES.innerHTML = "Reload if page language not change automatically";
+  infoES.innerHTML = "Press F5 if page language of the page don´t change automatically " + '<br>' + " Presione F5 si la pagina no cambia de idioma";
   localStorage.setItem("language", true);
   const en = document.querySelector(".en");
   en.addEventListener("click", function () {

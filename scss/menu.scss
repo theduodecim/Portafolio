@@ -1,4 +1,5 @@
 @import 'config';
+
 //en version
 .es {
     position: absolute;
@@ -26,6 +27,7 @@
     top: 35px;
     cursor: pointer;
     @include easeOut(); // transition mix out
+
     .btn-line {
         // each of the lines of the burger button
         width: 28px;
@@ -33,20 +35,28 @@
         margin: 0 0 5px 0;
         background: set-text-color($primary-color);
         @include easeOut();
-    } //Rotate Into X With Menu Lines
+    }
+
+    //Rotate Into X With Menu Lines
     &.close {
         transform: rotate(180deg);
+
         .btn-line {
+
             // lines of the burger
             // Line 1  - Rotate
             &:nth-child(1) {
                 //nth-child is a selector that takes a child of a parend class
                 transform: rotate(45deg) translate(10px);
-            } // Line 2  - Rotate
+            }
+
+            // Line 2  - Rotate
             &:nth-child(2) {
                 //nth-child is a selector that takes a child of a parend class
                 opacity: 0;
-            } // Line 3  - Rotate
+            }
+
+            // Line 3  - Rotate
             &:nth-child(3) {
                 //nth-child is a selector that takes a child of a parend class
                 transform: rotate(-45deg) translate(10px, -2px);
@@ -62,11 +72,13 @@
     width: 100%; // full width
     opacity: 0.98; //see through
     visibility: hidden; // we no longer see it
+
     &.show {
         // this is for the class we are adding when the button
         //is pressed
         visibility: visible;
     }
+
     &-branding,
     &-nav {
         // we dont need to call the entired class
@@ -80,6 +92,7 @@
         height: 100vh; // both sides grey and black 
         overflow: hidden; // never scroll bars
     }
+
     &-nav {
         margin: 0;
         padding: 0;
@@ -89,20 +102,25 @@
         // right now (0,-100%, 0) the translate3d will come from the top
         // if we put 100% this will come from the button
         @include easeOut(); // we want the transition mix out
+
         &.show {
             //Slide in from top
             transform: translate3d(0, 0, 0);
         }
-    } //Branding Side
+    }
+
+    //Branding Side
     &-branding {
         height: 100vh;
         background: $primary-color; // both sides grey and black 
         transform: translate3d(0, 100%, 0);
         @include easeOut();
+
         &.show {
             //Slide in from bottom
             transform: translate3d(0, 0, 0);
         }
+
         .portrait {
             width: 250px;
             height: 250px;
@@ -112,19 +130,24 @@
             border: solid 3px $secondary-color; //border takes style(solid) size(3px)
             // and a color($secondary-color)
         }
-    } //still within the menu
+    }
+
+    //still within the menu
     .nav-item {
         transform: translate3d(600px, 0, 0); //now all the items are slide like slide with the snow
         //we need each one
         @include easeOut; // ease out from config mixing
+
         &.show {
             //Slide in from bottom
             transform: translate3d(0, 0, 0);
         }
+
         &.current>a {
             color: $secondary-color;
         }
     }
+
     .nav-link {
         // styling the links
         display: inline-block; // img for this ssas folder
@@ -136,6 +159,7 @@
         color: set-text-color($primary-color); // white color
         text-decoration: none; // no decoration no color of links
         @include easeOut; // transition of easeOut
+
         &:hover {
             color: $secondary-color;
         }
@@ -144,9 +168,11 @@
 
 //Delay Each nav item slide by 0.1s
 //this is like in js for(let i = 0, i < 4; i++); as long i is 0 pluss i++ 
-@for $x from 1 through 4 {
+@for $x from 1 through 5 {
     .nav-item:nth-child(#{$x}) {
         // to add a variable inside of a nth selector is (#{$variable})
         transition-delay: $x * 0.1s; // for each link will be a transition delay now each one will come separately
-    } //nth-child is a selector that takes a child of a parend class
+    }
+
+    //nth-child is a selector that takes a child of a parend class
 }

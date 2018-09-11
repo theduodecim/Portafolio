@@ -1,5 +1,6 @@
 @import 'config';
 @import 'menu'; // menu after the config
+
 //core style
 * {
     box-sizing: border-box; // this will set the elements to boxsizing as a primal sizing
@@ -21,10 +22,12 @@ h2,
 h3 {
     margin: 0;
     font-weight: 400; // change the tinier of the font
+
     // adding & will call every header tag with this class
     &.lg-heading {
         font-size: 6rem; // rem is a multiplier of the html font sizes default sizes is 16 pixels 1 rem will be 16
     }
+
     &.sm-heading {
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;
@@ -54,12 +57,15 @@ header {
 main {
     padding: 4rem; // all it's in the main will have 4 rem padding
     min-height: calc(100vh - 60px);
+
     .icons {
         // this will affects only the icons inside of the main tag
         margin-top: 1rem;
+
         a {
             // each icon has a tag
             padding: 0.4rem;
+
             &:hover {
                 // & within
                 color: $secondary-color;
@@ -67,9 +73,11 @@ main {
             }
         }
     }
+
     &#home {
         // here we are giving attributes only the main with the id home.
         overflow: hidden; // no scroll bars.
+
         h1 {
             margin-top: 20vh; // if 100px height 20vh will take 20 of that slices.
         }
@@ -80,27 +88,33 @@ main {
 .about-info {
     display: grid;
     grid-gap: 30px;
-    grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+    grid-template-areas: 'bioimage bio bio''job1 job2 job3';
     grid-template-columns: repeat(3, 1fr);
+
     .bio-image {
         grid-area: bioimage; // wherever we put in grid-template-areas to assign
         margin: auto; // style like the last portrait
         border-radius: 50%;
         border: $secondary-color 3px solid;
     }
+
     .bio {
         grid-area: bio;
         font-size: 1.5rem;
     }
+
     .job-1 {
         grid-area: job1;
     }
+
     .job-2 {
         grid-area: job2;
     }
+
     .job-3 {
         grid-area: job3;
     }
+
     .job {
         background: lighten($primary-color, 5);
         padding: 0.5rem;
@@ -113,9 +127,11 @@ main {
     display: grid;
     grid-gap: 0.7rem;
     grid-template-columns: repeat(3, 1fr);
+
     img {
         width: 100%;
         border: 3px #fff solid;
+
         &.hover {
             opacity: 0.5;
             border-color: $secondary-color;
@@ -132,16 +148,19 @@ main {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 1rem;
+
     div {
         font-size: 2rem;
         border: 3px #fff solid;
         padding: 1.5rem 2.5;
         margin-bottom: 3rem;
         @include easeOut;
+
         &:hover {
             padding: 0.5rem 1.5rem;
             background: $secondary-color;
             color: set-text-color($secondary-color);
+
             span {
                 color: set-text-color($secondary-color);
             }
@@ -155,6 +174,7 @@ main {
     padding: 0.5rem 1rem;
     border: 0;
     margin-bottom: 0.3rem;
+
     &.hover {
         background: $secondary-color;
         color: set-text-color($secondary-color);

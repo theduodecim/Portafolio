@@ -114,10 +114,10 @@ function aboutContentES() {
     "Inicio de sesión y registro internos con Firebase." +
     "Google autenticación para almacenar en su perfil personal imágenes y editar su nombre. " +
     " Chat en tiempo real con todos los usuarios registrados, también podrán agregar a amigos para chatear individualmente. " +
-    " Ésta aplicación utiliza Firebase RealTimeDatebase para alojar usuarios, requets, chats e imágenes." +
-    " Hice esta aplicación en dos meses y la continuo" +
-    " mejorando, adaptando y aprendiendo nuevas funcionalidades." +
-    " Estaré encantado de trabajar en un nuevo proyecto con su equipo. ";
+    " Ésta aplicación utiliza Firebase RealTimeDatebase para alojar usuarios, request, chats e imágenes." + '<br>' +
+    "Diceñe este proyecto en dos meses " +
+    "que continuo mejorando, adaptando y aprendiendo nuevas " +
+    "funcionalidades.";
 
   workingarroundtitle.innerHTML = "Trabajando con clientes alrededor del mundo";
   workingarround.innerHTML = "Trabajando en distintos países con clientes de  Honduras, Argentina y Alemania;" + "\n" +

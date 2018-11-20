@@ -94,6 +94,7 @@ function index() {
 
 
 function about() {
+
   if (localStorage.getItem("language")) {
     ChangeToES();
     aboutContentES();
@@ -101,6 +102,7 @@ function about() {
   } else {
     console.log("en");
   }
+
 }
 
 
@@ -157,7 +159,7 @@ function aboutoldworkES() {
     "Excelente administración de PC: Word, Excel, Power Point, editores de Google Docs Reparación privada de PC - Tablets - Smartphones - GPS - Netbooks - Notebooks - Routers";
 }
 
-
+/// work
 
 function work() {
   if (localStorage.getItem("language")) {
@@ -167,6 +169,19 @@ function work() {
     console.log("en");
   }
 }
+
+$('#project1').hover(function () {
+  $('#project1').attr('src', 'img/project 3.jpg');
+  $('#project1').remove();
+});
+
+/*
+$('#work').hover(function () {
+  $('#work').css('color', 'red');
+});
+
+*/
+///
 
 
 function oldwork() {

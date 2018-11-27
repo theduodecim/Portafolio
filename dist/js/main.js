@@ -170,10 +170,6 @@ function work() {
   }
 }
 
-$('#project1').hover(function () {
-  $('#project1').attr('src', 'img/project 3.jpg');
-  $('#project1').remove();
-});
 
 /*
 $('#work').hover(function () {

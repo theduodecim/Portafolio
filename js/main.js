@@ -6,6 +6,7 @@ const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
 const es = document.querySelector(".es");
 const gamer = document.querySelector("#gamer");
+const normal = document.querySelector("#normal");
 const homelink = document.getElementById("homelink");
 const aboutlink = document.getElementById("aboutMelink");
 const worklink = document.getElementById("myWorklink");
@@ -250,25 +251,25 @@ function Gamer() {
 
 function changeToGamer() {
   if (localStorage.getItem("gamer")) {
-    localStorage.removeItem("language");
     Gamer();
-
-
     console.log("Gamer")
   }
 }
 
-function gamerOff() {
-  const gameroff = document.querySelector(".gameroff");
-  gameroff.addEventListener("click", function () {
-    localStorage.removeItem("gamer");
-    window.location.reload(true);
-  });
-}
-
-
 gamer.addEventListener("click", function () {
-  changeToGamer();
-  console.log('gamer');
+  gamer.setAttribute('class', 'gameroff');
   localStorage.setItem("gamer", true);
+  changeToGamer();
+  normal.style.visibility = "visible";
 });
+
+normal.style.visibility = "hidden";
+
+normal.addEventListener("click", function () {
+  gamerOff();
+});
+
+function gamerOff() {
+  localStorage.removeItem("gamer");
+  window.location.reload(true);
+}

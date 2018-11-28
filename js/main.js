@@ -219,7 +219,7 @@ function Gamer() {
   gamerInfoTitle1.style.color = "Gold";
   gamerinfosub1.innerHTML = "Tiny Gamer History";
   avatar.removeAttribute('src');
-  avatar.setAttribute('src', '/img/pentium2.jpg');
+  avatar.setAttribute('src', 'img/pentium2.jpg');
   trekkie.innerHTML = "Gamer Aspects : " + '<br>' +
     "I made a living for 3 years selling counter strike skins known as a Trader. " + '<br>' +
     "I play magic the Gathering with friends and tournaments." + '<br>' +
@@ -243,7 +243,7 @@ function Gamer() {
   wolfaceUrl.innerHTML = "https://wolface.bandcamp.com/releases ";
   wolfaceImg.style.borderRadius = "50px";
   wolfaceImg.style.display = 'block';
-  wolfaceImg.setAttribute('src', '/img/wolface.jpg');
+  wolfaceImg.setAttribute('src', 'img/wolface.jpg');
 
 }
 

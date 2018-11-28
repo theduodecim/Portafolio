@@ -231,7 +231,7 @@ function Gamer() {
   gamerInfoTitle2.style.color = "Gold";
   gamerInfoSub2.innerHTML = "a Forum type of Player";
   gamerInfo2.innerHTML =
-    "I Participate in world of Warcraft & Unreal Tournament 3 Forums" + '<br>' +
+    "I Participate in world of Warcraft & Unreal Tournament 3 Forums." + '<br>' +
     "I can talk with people with patience and " + " looking for the best answer." + '<br>' +
     "I already setup an PHP BB environment from scratch.";
 

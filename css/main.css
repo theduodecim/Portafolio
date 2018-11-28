@@ -191,6 +191,17 @@ main {
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
+    .about-info .bio #gamer {
+      background-color: transparent;
+      border: none;
+      color: black;
+      height: 40px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: 900;
+      border-radius: 50%;
+      cursor: pointer; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {

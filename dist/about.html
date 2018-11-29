@@ -1,152 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>About Me</title>
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous" />
-</head>
-
-<body onload="about()">
-  <header>
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
-    <div class="es">ES</div>
-    <spam id="infoES"></spam>
-    <nav class="menu">
-      <div class="menu-branding">
-        <div class="portrait"></div>
+  <body onload="about()">
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
       </div>
-      <ul class="menu-nav">
-        <li class="nav-item">
-          <a id="homelink" href="index.html" class="nav-link"> Home </a>
-        </li>
-        <li class="nav-item current">
-          <a id="aboutMelink" href="about.html" class="nav-link">
-            About Me
-          </a>
-        </li>
-        <li class="nav-item">
-          <a id="myWorklink" href="work.html" class="nav-link"> My Work </a>
-        </li>
-        <li class="nav-item">
-          <a id="aboutoldwork" href="aboutoldwork.html" class="nav-link">
-            My It Career
-          </a>
-        </li>
-        <li class="nav-item">
-          <a id="howtoReachMelink" href="contact.html" class="nav-link">
-            How to Reach Me
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main id="about">
-    <h1 class="lg-heading">About <span class="text-secondary"> Me </span></h1>
-    <h2 class="sm-heading">Let me tell you a few things ...</h2>
-
-    <div class="about-info">
-      <img id="avatar" class="bio-image" src="img/portrait.jpg" alt="Juan S Cabrera" />
-
-      <div class="bio">
-        <h3 class="text-secondary">BIO</h3>
-        <p id="biotext">
-          I am a dedicated and committed person to finish a job in conditions.
-          I have great knowledge in Software and Hardware, this allows me to
-          detect the problem quickly and keeping patience on all things, I am
-          willing to expand my knowledge of development and web applications
-          according to the requirements of the given project.
-        </p>
-        <img height="40rem" src="img/ampps.png" />
-        <img height="40rem" src="img/msyql.png" />
-        <img height="40rem" src="img/php.png" />
-        <img height="40rem" src="img/laravel_logo.png" />
-        <img height="40rem" src="img/Apache.png" />
-
-        <img height="40rem" src="img/CSS.png" />
-        <img height="40rem" src="img/sass.png" />
-        <img height="40rem" src="img/java.png" />
-        <img height="40rem" src="img/spring.png" />
-        <img height="40rem" src="img/javascript.png" />
-        <img height="40rem" src="img/typescript.png" />
-        <input type="button" id="gamer" value="Gamer">
-        <img height="40rem" src="img/Angular.png" />
-        <img height="40rem" src="img/ionic.png" />
-        <img height="40rem" src="img/framework7.png" />
-        <img height="40rem" src="img/WordPress_logo.png" />
-        <img height="40rem" src="img/Phpbb3logo.png" />
-        <input type="button" id="normal" value="Back">
-      </div>
-
-      <div class="job job-1">
-        <h3 id="gamerinfotitle1">Trekkie chat Web Android Application</h3>
-        <h6 id="gamerinfosub1" class="text-secondary">Full Stack Developer</h6>
-        <p id="trekkie">
-          Creator of trekkiechat, an application made in Ionic, with the
-          following specifications: Start of internal session and registration
-          with Firebase. Google authentication to store in your profile
-          Personal images and edit your name. Chat in real time with all
-          registered users, they can also add friends to chat individually.
-          This application uses Firebase RealTimeDatebase to host users,
-          request, chats and images. I made this application in two months and
-          the continuous improving, adapting and learning new functionalities
-          I will be happy to work on a new project in your team.
-        </p>
-      </div>
-
-      <div class="job job-2">
-        <h3 id="gamerinfotitle2">Programmer</h3>
-        <h6 id="gamerinfosub2" class="text-secondary">Solution Provider</h6>
-        <p id="gamerinfo2"></p>
-        <ul id="ulist" style="text-align: left">
-          <p id="enviroments">Working on Environments like :</p>
-          <li>Javascript , Typescript , Jquery Framework.</li>
-          <li>Angular 2-4-5-6 Framework.</li>
-          <li>PHP, laravel 5.7 Framework.</li>
-          <li>Java, Spring Boot Framework.</li>
-          <li>Phonegap , Ionic 3 Framework , Framework 7.</li>
-          <li>
-            CSS, SCSS, Material , Materialize , Bootstrap 3, 4, Phaser 3.
+      <div class="es">ES</div>
+      <spam id="infoES"></spam>
+      <nav class="menu">
+        <div class="menu-branding"><div class="portrait"></div></div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a id="homelink" href="index.html" class="nav-link"> Home </a>
           </li>
-          <li>
-            NodeJS, Ajax , Mysql , mariaDB , JSON , Firebase , FireStore , GIT
-            , Bitbucket, Composer .
+          <li class="nav-item current">
+            <a id="aboutMelink" href="about.html" class="nav-link">
+              About Me
+            </a>
           </li>
-          <li>
-            Google Cloud Plataform, Visual Studio Code , WebStorm , Eclipse
-            photon - oxygen , Android Studio , AMPPS.
+          <li class="nav-item">
+            <a id="myWorklink" href="work.html" class="nav-link"> My Work </a>
           </li>
-          <li>Wordpress, PHPBB.</li>
+          <li class="nav-item">
+            <a id="aboutoldwork" href="aboutoldwork.html" class="nav-link">
+              My It Career
+            </a>
+          </li>
+          <li class="nav-item">
+            <a id="howtoReachMelink" href="contact.html" class="nav-link">
+              How to Reach Me
+            </a>
+          </li>
         </ul>
+      </nav>
+    </header>
+    <main id="about">
+      <h1 class="lg-heading">About <span class="text-secondary"> Me </span></h1>
+      <h2 class="sm-heading">Let me tell you a few things ...</h2>
+
+      <div class="about-info">
+        <img
+          id="avatar"
+          class="bio-image"
+          src="img/portrait.jpg"
+          alt="Juan S Cabrera"
+        />
+
+        <div class="bio">
+          <h3 class="text-secondary">BIO</h3>
+          <p id="biotext">
+            I am a dedicated and committed person to finish a job in conditions.
+            I have great knowledge in Software and Hardware, this allows me to
+            detect the problem quickly and keeping patience on all things, I am
+            willing to expand my knowledge of development and web applications
+            according to the requirements of the given project.
+          </p>
+          <img height="40rem" src="img/ampps.png" />
+          <img height="40rem" src="img/msyql.png" />
+          <img height="40rem" src="img/php.png" />
+          <img height="40rem" src="img/laravel_logo.png" />
+          <img height="40rem" src="img/Apache.png" />
+          <img height="40rem" src="img/CSS.png" />
+          <img height="40rem" src="img/sass.png" />
+          <img height="40rem" src="img/java.png" />
+          <img height="40rem" src="img/spring.png" />
+          <img height="40rem" src="img/javascript.png" />
+          <img height="40rem" src="img/typescript.png" />
+          <input type="button" id="gamer" value="Gamer" />
+          <img height="40rem" src="img/Angular.png" />
+          <img height="40rem" src="img/ionic.png" />
+          <img height="40rem" src="img/framework7.png" />
+          <img height="40rem" src="img/WordPress_logo.png" />
+          <img height="40rem" src="img/Phpbb3logo.png" />
+          <input type="button" id="normal" value="Back" />
+        </div>
+
+        <div class="job job-1">
+          <h3 id="gamerinfotitle1">Trekkie chat Web Android Application</h3>
+          <h6 id="gamerinfosub1" class="text-secondary">
+            Full Stack Developer
+          </h6>
+          <p id="trekkie">
+            Creator of trekkiechat, an application made in Ionic, with the
+            following specifications: Start of internal session and registration
+            with Firebase. Google authentication to store in your profile
+            Personal images and edit your name. Chat in real time with all
+            registered users, they can also add friends to chat individually.
+            This application uses Firebase RealTimeDatebase to host users,
+            request, chats and images. I made this application in two months and
+            the continuous improving, adapting and learning new functionalities
+            I will be happy to work on a new project in your team.
+          </p>
+        </div>
+
+        <div class="job job-2">
+          <h3 id="gamerinfotitle2">Programmer</h3>
+          <h6 id="gamerinfosub2" class="text-secondary">Solution Provider</h6>
+          <p id="gamerinfo2"></p>
+          <ul id="ulist" style="text-align: left">
+            <p id="enviroments">Working on Environments like :</p>
+            <li>Javascript , Typescript , Jquery Framework.</li>
+            <li>Angular 2-4-5-6 Framework.</li>
+            <li>PHP, laravel 5.7 Framework.</li>
+            <li>Java, Spring Boot Framework.</li>
+            <li>Phonegap , Ionic 3 Framework , Framework 7.</li>
+            <li>
+              CSS, SCSS, Material , Materialize , Bootstrap 3, 4, Phaser 3.
+            </li>
+            <li>
+              NodeJS, Ajax , Mysql , mariaDB , JSON , Firebase , FireStore , GIT
+              , Bitbucket, Composer .
+            </li>
+            <li>
+              Google Cloud Plataform, Visual Studio Code , WebStorm , Eclipse
+              photon - oxygen , Android Studio , AMPPS.
+            </li>
+            <li>Wordpress, PHPBB.</li>
+          </ul>
+        </div>
+
+        <div class="job job-3">
+          <h3 id="workingarroundtitle">Working Arround the World</h3>
+          <h6 id="gamerinfosub3" class="text-secondary">Entrepreneur</h6>
+          <p id="workingarround">
+            Working arround the world with clients from Honduras, Argentina &
+            Germany. Professionally Speaking with order and clarity &
+            Professionally Structure Programming writing.
+          </p>
+          <a href="https://wolface.bandcamp.com/releases" id="wolfaceUrl"></a>
+          <a href="https://wolface.bandcamp.com/releases">
+            <img
+              style="display: none"
+              height="120"
+              width="120"
+              id="wolfaceImg"
+              src=""
+            />
+          </a>
+        </div>
       </div>
+    </main>
 
-      <div class="job job-3">
-        <h3 id="workingarroundtitle">Working Arround the World</h3>
-        <h6 id="gamerinfosub3" class="text-secondary">Entrepreneur</h6>
-        <p id="workingarround">
-          Working arround the world with clients from Honduras, Argentina &
-          German. Professionally Speaking with order and clarity &
-          Professionally Structure Programing writing.
-        </p>
-        <a href="https://wolface.bandcamp.com/releases" id="wolfaceUrl"></a>
-        <a href="https://wolface.bandcamp.com/releases"> <img style="display: none" height="120" width="120" id="wolfaceImg"
-            src="">
-        </a>
-      </div>
-    </div>
-  </main>
+    <script src="js/main.js"></script>
 
-  <script src="js/main.js"></script>
-
-  <footer id="main-footer">Copyright &copy; 2018</footer>
-</body>
-
+    <footer id="main-footer">Copyright &copy; 2018</footer>
+  </body>
 </html>

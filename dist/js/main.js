@@ -223,7 +223,7 @@ function Gamer() {
   trekkie.innerHTML =
     "Gamer Aspects : " +
     "<br>" +
-    "I made a living for 3 years selling counter strike skins known as a Trader. " +
+    "I made a living for 3 years selling Counter Strike skins known as a Trader. " +
     "<br>" +
     "I play magic the Gathering with friends and tournaments." +
     "<br>" +

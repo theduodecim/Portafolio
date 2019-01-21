@@ -139,6 +139,37 @@ main {
 
     .job-3 {
         grid-area: job3;
+
+        #nivaxel {
+            position: relative;
+            background: url(../img/AboutJobs3.png);
+
+            width: 12.4rem;
+            height: 5rem;
+            margin: auto;
+            border-style: none;
+            cursor: pointer;
+        }
+
+        #naiades {
+            position: relative;
+            background: url(../img/AboutJobs2.jpg);
+            width: 12.4rem;
+            height: 5rem;
+            margin: auto;
+            border-style: none;
+            cursor: pointer;
+        }
+
+        #mintec {
+            position: relative;
+            background: url(../img/AboutJobs1.jpg);
+            width: 12.4rem;
+            height: 5rem;
+            margin: auto;
+            border-style: none;
+            cursor: pointer;
+        }
     }
 
     .job {
@@ -147,6 +178,9 @@ main {
         border-bottom: $secondary-color 5px solid;
     }
 }
+
+
+
 
 //Work page
 .projects {

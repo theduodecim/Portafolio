@@ -219,6 +219,30 @@ main {
     grid-area: job2; }
   .about-info .job-3 {
     grid-area: job3; }
+    .about-info .job-3 #nivaxel {
+      position: relative;
+      background: url(../img/AboutJobs3.png);
+      width: 12.4rem;
+      height: 5rem;
+      margin: auto;
+      border-style: none;
+      cursor: pointer; }
+    .about-info .job-3 #naiades {
+      position: relative;
+      background: url(../img/AboutJobs2.jpg);
+      width: 12.4rem;
+      height: 5rem;
+      margin: auto;
+      border-style: none;
+      cursor: pointer; }
+    .about-info .job-3 #mintec {
+      position: relative;
+      background: url(../img/AboutJobs1.jpg);
+      width: 12.4rem;
+      height: 5rem;
+      margin: auto;
+      border-style: none;
+      cursor: pointer; }
   .about-info .job {
     background: #115270;
     padding: 0.5rem;

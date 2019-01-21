@@ -62,6 +62,13 @@ const navItems = document.querySelectorAll(".nav-item"); // selecting all & putt
 let showMenu = false;
 
 menuBtn.addEventListener("click", toggleMenu); // adding an event for the button that takes the
+
+const nivaxel = document.querySelector("#nivaxel");
+const naiades = document.querySelector("#naiades");
+const mintec = document.querySelector("#mintec");
+
+
+
 // callback function
 
 function toggleMenu() {
@@ -181,6 +188,21 @@ function aboutContentES() {
     "Hablando profesionalmente con orden y claridad, escribiendo código utilizando una estructura de programación de manera profesional.";
   enviroments.innerHTML = "Trabajando en ambientes de trabajo como";
 }
+
+/// About Work Job
+nivaxel.addEventListener("click", function () {
+  window.location.href = 'https://www.nivaxel.com/';
+});
+naiades.addEventListener("click", function () {
+  window.location.href = 'https://www.naiades.com.ar/';
+});
+mintec.addEventListener("click", function () {
+  window.location.href = 'https://mintec.co/es/';
+});
+
+
+
+
 
 function aboutoldworkES() {
 

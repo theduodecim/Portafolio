@@ -343,6 +343,10 @@ function Gamer() {
   wolfaceImg.style.borderRadius = "50px";
   wolfaceImg.style.display = "block";
   wolfaceImg.setAttribute("src", "img/wolface.jpg");
+
+  nivaxel.remove();
+  naiades.remove();
+  mintec.remove();
 }
 
 function changeToGamer() {

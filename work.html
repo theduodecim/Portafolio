@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>View My Work</title>
   <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
 </head>
 
 <body id="BodyWork" onload="work()">
@@ -57,85 +57,223 @@
   <main id="work">
     <h1 id="workTitle" class="lg-heading">My <span class="text-secondary"> Work </span></h1>
     <h2 id="workSubTitle" class="sm-heading">Check out some of my projects</h2>
+    <div class="works">
+      <div class="slider2">
+        <section class="section slider">
+          <input type="radio" name="slider" id="slide-1" class="slider__radio">
+          <input type="radio" name="slider" id="slide-2" class="slider__radio">
+          <input type="radio" name="slider" id="slide-3" class="slider__radio" checked>
+          <input type="radio" name="slider" id="slide-4" class="slider__radio">
+          <input type="radio" name="slider" id="slide-5" class="slider__radio">
 
-    <div class="projects">
-      <div id="box1" class="item">
-        <a href="https://www.behance.net/gallery/68952799/Working-with-German-Client-Angular-2-with-boostrap-4">
-          <img id="project1" src="img/project 1.jpg" alt="Project" />
-        </a>
-        <a href="https://www.behance.net/gallery/68952799/Working-with-German-Client-Angular-2-with-boostrap-4" class="btn-dark">
-          <i class="fas fa-eye"></i> Working with German Client
-        </a>
-        <!--
-            <a href="#" class="btn-dark">
-                <i class="fab fa-github"></i> GutHub
-            </a>
-          -->
+          <div class="slider__holder">
+            <label for="slide-1" class="slider__item slider__item--1 card">
+              <div id="box1" class="item">
+                <img id="project1" src="img/project 1.jpg" alt="Project" />
+                <a
+                  href="https://www.behance.net/gallery/68952799/Working-with-German-Client-Angular-2-with-boostrap-4"></a>
+                <a href="https://www.behance.net/gallery/68952799/Working-with-German-Client-Angular-2-with-boostrap-4"
+                  class="btn-dark">
+                  <i class="fas fa-eye"></i>Website with Angular 2 and Boostrap 4 for a client</a>
+              </div>
+            </label> <!-- Slider__item -->
+
+            <label for="slide-2" class="slider__item slider__item--2 card">
+
+              <div class="item">
+                <img src="img/project hotelmarbella.jpg" alt="Project" />
+                <a href="http://www.hotelmarbellapr.com/" class="btn-dark">
+                  <i class="fas fa-eye"></i>Hotelmarbella work done with Nivaxel Digital Agency</a>
+                <a href="https://www.nivaxel.com/paginas-web/" class="btn-dark"><i class="fas fa-eye"></i>Nivaxel
+                  Digital Agency Link</a>
+              </div>
+            </label> <!-- Slider__item -->
+
+            <label for="slide-3" class="slider__item slider__item--3 card">
+              <div class="item">
+                <img src="img/project 3.jpg" alt="Project" />
+                <a href="https://www.behance.net/gallery/67741751/Trekkie-Chat-Website-And-Application">
+                </a>
+                <a href="https://www.behance.net/gallery/67741751/Trekkie-Chat-Website-And-Application"
+                  class="btn-dark">
+                  <i class="fas fa-eye"></i>Trekkie Chat Website And Application
+                </a>
+                <a href=" https://trekkie-chat-website.firebaseapp.com/" class="btn-dark">
+                  <i class="fas fa-eye"></i> Website Link
+                </a>
+              </div>
+            </label> <!-- Slider__item -->
+            <label for="slide-4" class="slider__item slider__item--4 card">
+              <div class="item">
+                <img src="img/project 4.jpg" alt="Project" />
+                <a href="https://www.behance.net/gallery/67741289/Security-Project-Contratado-por-httpmintecco">
+
+                </a>
+                <a href="https://www.behance.net/gallery/67741289/Security-Project-Contratado-por-httpmintecco"
+                  class="btn-dark">
+                  <i class="fas fa-eye"></i>Behance Link - Adding Functionalities within the Security Agency Website
+                </a>
+                <a href="https://mintec.co/es/" class="btn-dark">
+                  <i class="fas fa-eye"></i> mintec Angency link
+                </a>
+              </div>
+            </label> <!-- Slider__item -->
+
+            <label for="slide-5" class="slider__item slider__item--5 card">
+              <div class="item">
+                <img src="img/project 8 resize.jpg" alt="Project" />
+
+                <a href="https://www.behance.net/gallery/73145169/Laravel-Backend-Project" class="btn-dark">
+                  <i class="fas fa-eye"></i> Backend Project Laravel, Mysql, Vue &
+                  Forge + SSL Certification + Telescope <br><span style="color: red;"> (Project Servers down
+                    1/2/2019)</span>
+                </a>
+                <a href="https://github.com/theduodecim/LaravelBackendProject" class="btn-dark">
+                  <i class="fab fa-github"></i> Project Git
+                </a>
+                <a href="https://forge.laravel.com/" class="btn-dark">
+                  <i class="fas fa-eye"></i> Forge Servers
+                </a>
+              </div>
+            </label> <!-- Slider__item -->
+
+
+          </div> <!-- Slider Holder -->
+
+          <div class="bullets">
+            <label for="slide-1" class="bullets__item bullets__item--1"></label>
+            <label for="slide-2" class="bullets__item bullets__item--2"></label>
+            <label for="slide-3" class="bullets__item bullets__item--3"></label>
+            <label for="slide-4" class="bullets__item bullets__item--4"></label>
+            <label for="slide-5" class="bullets__item bullets__item--5"></label>
+          </div> <!-- Bullets -->
+        </section> <!-- Section Slider -->
       </div>
 
-      <div class="item">
-        <a href="https://www.behance.net/gallery/68052521/UXUIHTMLHTML5-CSSCSS3JavaScrpt-JqueryFramework7">
-          <img src="img/project 2.jpg" alt="Project" />
-        </a>
-        <a href="https://www.behance.net/gallery/68052521/UXUIHTMLHTML5-CSSCSS3JavaScrpt-JqueryFramework7" class="btn-dark">
-          <i class="fas fa-eye"></i> Phonegap Design
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=com.Rubik_sCubeFlags&hl=en" class="btn-dark">
-          <i class="fas fa-eye"></i> PlayStore Link
-        </a>
+
+      <div class="review">
+        <h2 class="sm-heading">Reviews de mis clientes</h2>
+        <div class="container carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="items">
+              <i class="fa fa-star goldStar"></i>
+              <i class="fa fa-star goldStar"></i>
+              <i class="fa fa-star goldStar"></i>
+              <i class="fa fa-star goldStar"></i>
+              <i class="fa fa-star goldStar"></i>
+
+              <p class="lne">"Realizó el trabajo a la perfección y a tiempo. Seguro vuelvo a trabajar con Juan,
+                excelente profesional!"</p>
+              <a href="https://www.workana.com/e/dc7b55e22cb39b2afd8b9be97990f767"><b>Florencia Santucho</b></a>
+            </div>
+          </div>
+          <br>
+          <div class="item">
+            <div class="items">
+              <i class="fa fa-star goldStar"></i>
+              <i class="fa fa-star goldStar"></i>
+              <i class="fa fa-star goldStar"></i>
+              <i class="fa fa-star goldStar"></i>
+              <i class="fa fa-star goldStar"></i>
+              <p class="lne">Muy predispuesto</p>
+              <a href="https://www.workana.com/e/e7cdc10157821e61bfae8c8f7dd6efbd"><b>Damián Alejandro </b></a>
+            </div>
+
+          </div>
+          <br>
+          <div class="item">
+            <div class="items">
+              <i class="fa fa-star goldStar"></i>
+              <i class="fa fa-star goldStar"></i>
+              <i class="fa fa-star goldStar"></i>
+              <i class="fa fa-star goldStar"></i>
+              <i class="fa fa-star"></i>
+              <p class="lne">muy atento y preocupado</p>
+              <a href="https://www.workana.com/e/6ca5c2c0606bd8524c26531d89224e7b"><b>ale saavedra</b></a>
+            </div>
+          </div>
+          <br>
+          <div class="item">
+            <div class="items">
+              <i class="fa fa-star goldStar"></i>
+              <i class="fa fa-star goldStar"></i>
+              <i class="fa fa-star goldStar"></i>
+              <i class="fa fa-star goldStar"></i>
+              <i class="fa fa-star goldStar"></i>
+
+              <p class="lne">Pago directo para Juan S.</p>
+              <a href="https://www.workana.com/e/da08dbcbf2f6bc6f37808581c02d1a6a"><b>Gustavo Iglesias</b></a>
+            </div>
+          </div>
+          <br>
+          <div class="item">
+            <div class="items item">
+              <i class="fa fa-star goldStar"></i>
+              <i class="fa fa-star goldStar"></i>
+              <i class="fa fa-star goldStar"></i>
+              <i class="fa fa-star goldStar"></i>
+              <i class="fa fa-star goldStar"></i>
+              <p class="lne">Pago directo para Juan S.</p>
+              <a href="https://www.workana.com/e/368ea6594c808b616ad09f919fefe113"><b>Nivaxel</b></a>
+            </div>
+          </div>
+          <br>
+        </div>
+
       </div>
 
-      <div class="item">
-        <a href="https://www.behance.net/gallery/67741751/Trekkie-Chat-Website-And-Application">
-          <img src="img/project 3.jpg" alt="Project" />
-        </a>
-        <a href="https://www.behance.net/gallery/67741751/Trekkie-Chat-Website-And-Application" class="btn-dark">
-          <i class="fas fa-eye"></i> Trekkie Chat Website And Application
-        </a>
-        <a href=" https://trekkie-chat-website.firebaseapp.com/" class="btn-dark">
-          <i class="fas fa-eye"></i> Website Link
-        </a>
 
-        <!--
-            <a href="#" class="btn-dark">
-                <i class="fab fa-github"></i> GutHub
-            </a>
-          -->
-      </div>
-      <div class="item">
-        <a href="https://www.behance.net/gallery/67741289/Security-Project-Contratado-por-httpmintecco">
-          <img src="img/project 4.jpg" alt="Project" />
-        </a>
-        <a href="https://www.behance.net/gallery/67741289/Security-Project-Contratado-por-httpmintecco" class="btn-dark">
-          <i class="fas fa-eye"></i> Adding Functionalities
-        </a>
-        <a href="https://mintec.co/es/" class="btn-dark">
-          <i class="fas fa-eye"></i> Webiste Link
-        </a>
-        <!--
-            <a href="#" class="btn-dark">
-                <i class="fab fa-github"></i> GutHub
-            </a>
-          -->
-      </div>
+    </div>
 
-      <div class="item">
-        <a href="https://www.behance.net/gallery/69111865/Phaser-30-Project">
-          <img src="img/project 5.jpg" alt="Project" />
-        </a>
-        <a href="https://www.behance.net/gallery/69111865/Phaser-30-Project" class="btn-dark">
-          <i class="fas fa-eye"></i> Phaser Game with a designer
-        </a>
-        <!--
-            <a href="#" class="btn-dark">
-                <i class="fab fa-github"></i> GutHub
-            </a>
-          -->
-      </div>
-      <div class="item">
-        <a href="https://www.behance.net/gallery/70289593/PHP-Mysql-AWS">
+
+
+
+
+
+
+
+
+    <!--
+ <div class="item">
+                <img src="img/project 2.jpg" alt="Project" />
+                <a href="https://www.behance.net/gallery/68052521/UXUIHTMLHTML5-CSSCSS3JavaScrpt-JqueryFramework7"></a>
+                <a href="https://www.behance.net/gallery/68052521/UXUIHTMLHTML5-CSSCSS3JavaScrpt-JqueryFramework7"
+                  class="btn-dark">
+                  <i class="fas fa-eye"></i> Phonegap Design </a>
+              </div>
+
+
+<div class="item">
+                <img src="img/project 5.jpg" alt="Project" />
+                <a href="https://www.behance.net/gallery/69111865/Phaser-30-Project">
+
+                </a>
+                <a href="https://www.behance.net/gallery/69111865/Phaser-30-Project" class="btn-dark">
+                  <i class="fas fa-eye"></i> Phaser Game with a designer
+                </a>
+              </div>
+
+
+              
+    <div class="item">
           <img src="img/project 6.jpg" alt="Project" />
-        </a>
+          <a href="https://www.behance.net/gallery/70289593/PHP-Mysql-AWS"></a>
+          <a href="https://www.behance.net/gallery/70289593/PHP-Mysql-AWS" class="btn-dark">
+            <i class="fas fa-eye"></i> Backend Project PHP, Mysql, Javascript &
+            AWS + SSL Certification
+          </a>
+          <a href="https://backendproject.tk/" class="btn-dark">
+            <i class="fas fa-eye"></i> Website Link<span style="color: red;"> (Project Servers down)</span>
+          </a>
+          <a href="#" class="btn-dark">
+            <i class="fas fa-signal"></i> Offline hours : Servers down
+            <br />
+            Time Zone: ART / UTC-3 hours
+          </a>
+        </div>
+      <div class="item">
+        <img src="img/project 6.jpg" alt="Project" />
+        <a href="https://www.behance.net/gallery/70289593/PHP-Mysql-AWS"></a>
         <a href="https://www.behance.net/gallery/70289593/PHP-Mysql-AWS" class="btn-dark">
           <i class="fas fa-eye"></i> Backend Project PHP, Mysql, Javascript &
           AWS + SSL Certification
@@ -149,6 +287,9 @@
           Time Zone: ART / UTC-3 hours
         </a>
       </div>
+
+
+
 
       <div class="item">
         <a href="https://www.naiades.com.ar/">
@@ -185,6 +326,15 @@
           <i class="fas fa-eye"></i> Docker, Node js, mongoDB, Nginx, WebApp link
         </a>
       </div>
+
+      <div class="item">
+        <img src="img/project 9.jpg" alt="Project" />
+        <a class="btn-dark" href="https://www.behance.net/gallery/73980981/Docker-node-mongodb-Nginx-WebApp">
+          <i class="fas fa-eye"></i> Behance</a>
+        <a href="https://github.com/theduodecim/DockerRepository-MongoDB-NodeJs" class="btn-dark">
+          <i class="fas fa-eye"></i> Docker, Node js, mongoDB, Nginx, WebApp link</a>
+      </div>
+
       <div class="item">
         <a href="https://www.nivaxel.com/paginas-web/">
           <img src="img/project 10.jpg" alt="Project" />
@@ -193,13 +343,16 @@
           <i class="fas fa-eye"></i> Working Full-Time with Nivaxel
         </a>
       </div>
-
     </div>
+
+  -->
+
+
   </main>
 
   <script src="js/main.js"></script>
 
-  <footer id="main-footer">Copyright &copy; 2018</footer>
+  <footer id="main-footer">Copyright &copy; 2019</footer>
 </body>
 
 </html>

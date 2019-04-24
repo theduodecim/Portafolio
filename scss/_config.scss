@@ -5,6 +5,7 @@ $show-home-image: true; // if the show img is true will include the background
 // we want not just the image we need the overlay (grey)
 $home-image: url(../img/background.jpg);
 $background-opacity: 0.6;
+
 //functions
 @mixin easeOut {
     //this is how we create a function in SASS is called @mixin
@@ -17,6 +18,7 @@ $background-opacity: 0.6;
             background: $home-image; // here the output will be the var img
             background-attachment: fixed;
             background-size: cover;
+
             &:after {
                 content: ''; // this overlay is inside of the img properties id
                 position: absolute; // we want to cover all body
@@ -31,16 +33,54 @@ $background-opacity: 0.6;
     }
 }
 
+/*
+Mixing for the Slider
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Config
+2.0 Translate
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 Transition
+--------------------------------------------------------------*/
+
+@mixin default-transition($param: all) {
+    transition: $param $normal-transition-time $default-ease;
+}
+
+/*--------------------------------------------------------------
+2.0 Translate
+--------------------------------------------------------------*/
+
+@mixin translateX($value: -50%) {
+    transform: translateX($value);
+}
+
+@mixin translateY($value: -50%) {
+    transform: translateY($value);
+}
+
+@mixin translateXY($value: -50%) {
+    transform: translate($value, $value);
+}
+
+
 //To return anything inside of SCSS Has to be a function not a Mixing
 //So below here will change the color of the fonts if the background is white
 //Set Text Color
 //Set Text Color 
 @function set-text-color($color) {
+
     // thakes a color
     @if (lightness($color) > 40) {
         //lightness is a constant method
         @return black;
     }
+
     @else {
         @return #fff;
     }

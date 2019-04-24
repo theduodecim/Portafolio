@@ -1,5 +1,8 @@
 @import 'config';
 @import 'menu'; // menu after the config
+@import 'styling';
+@import 'variables';
+@import 'funtionality';
 
 //core style
 * {
@@ -183,10 +186,19 @@ main {
 
 
 //Work page
-.projects {
+.works {
     display: grid;
-    grid-gap: 0.7rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+    grid-template-areas: 'slider2  review';
+    grid-template-columns: repeat(2fr);
+
+    .slider2 {
+        grid-area: slider2;
+    }
+
+    .review {
+        grid-area: review;
+    }
 
     img {
         width: 100%;
@@ -197,6 +209,10 @@ main {
             border-color: $secondary-color;
             @include easeOut;
         }
+    }
+
+    .goldStar {
+        color: goldenrod;
     }
 }
 

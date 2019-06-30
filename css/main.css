@@ -588,6 +588,24 @@ main {
     grid-area: job1; }
   .about-info .job-2 {
     grid-area: job2; }
+    .about-info .job-2 #pdfOpen {
+      border: none;
+      padding: 16px 22px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      -webkit-transition-duration: 0.4s;
+      /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+      background-color: white;
+      color: black;
+      border: 2px solid #008CBA; }
+    .about-info .job-2 #pdfOpen:hover {
+      background-color: #008CBA;
+      color: white; }
   .about-info .job-3 {
     grid-area: job3; }
     .about-info .job-3 #nivaxel {

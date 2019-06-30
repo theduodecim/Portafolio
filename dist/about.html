@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/pdfViewer.css">
 </head>
 
 <body onload="about()">
@@ -56,11 +57,11 @@
   </header>
   <main id="about">
     <h1 id="aboutTitle" class="lg-heading">About <span class="text-secondary"> Me </span></h1>
-    <h2 id="aboutSubTitle" class="sm-heading">Let me tell you a few things ...</h2>
+    <h2 id="aboutSubTitle" class="sm-heading">Let me tell you a few things... <span>asdasd</span>
+    </h2>
 
     <div class="about-info">
       <img id="avatar" class="bio-image" src="img/portrait.jpg" alt="Juan S Cabrera" />
-
       <div class="bio">
         <h3 class="text-secondary">BIO</h3>
         <p id="biotext">
@@ -113,33 +114,36 @@
         <h3 class="sm-heading"><a style="text-decoration: none" href="https://github.com/theduodecim"> Mas
             Proyectos dentro de mi repositorio de Github <i class="fab fa-github-square"></i></a></h3>
       </div>
-
       <div class="job job-2">
-        <h3 id="gamerinfotitle2">Programmer</h3>
-        <h6 id="gamerinfosub2" class="text-secondary">Solution Provider</h6>
-        <p id="gamerinfo2"></p>
-        <ul id="ulist" style="text-align: left">
-          <p id="enviroments">Working on Environments like :</p>
-          <li>Javascript , ES6 , Typescript , Jquery Framework.</li>
-          <li>Angular 2-4-5-6 Framework.</li>
-          <li>PHP, laravel 5.7 Framework.</li>
-          <li>Java, Spring Boot Framework.</li>
-          <li>Phonegap , Ionic 3 Framework , Framework 7.</li>
-          <li>
-            CSS, SCSS, Material , Materialize , Bootstrap 3, 4, Phaser 3.
-          </li>
-          <li>
-            NodeJS, Apache , nginx , Ajax , Mysql , mariaDB , JSON , Firebase
-            , FireStore , GIT , Bitbucket, Composer , Docker.
-          </li>
-          <li>
-            Google Cloud Plataform, Visual Studio Code , WebStorm , Eclipse
-            photon - oxygen , Android Studio , AMPPS.
-          </li>
-          <li>Wordpress, PHPBB.</li>
-        </ul>
+        <button style="cursor: pointer;" id="pdfOpen" hidden>Open CV</button>
+        <div id="pdfBox">
+        </div>
+        <div id="workingEnv">
+          <h3 id="gamerinfotitle2">Programmer</h3>
+          <h6 id="gamerinfosub2" class="text-secondary">Solution Provider</h6>
+          <p id="gamerinfo2"></p>
+          <ul id="ulist" style="text-align: left">
+            <p id="enviroments">Working on Environments like :</p>
+            <li>Javascript , ES6 , Typescript , Jquery Framework.</li>
+            <li>Angular 2-4-5-6 Framework.</li>
+            <li>PHP, laravel 5.7 Framework.</li>
+            <li>Java, Spring Boot Framework.</li>
+            <li>Phonegap , Ionic 3 Framework , Framework 7.</li>
+            <li>
+              CSS, SCSS, Material , Materialize , Bootstrap 3, 4, Phaser 3.
+            </li>
+            <li>
+              NodeJS, Apache , nginx , Ajax , Mysql , mariaDB , JSON , Firebase
+              , FireStore , GIT , Bitbucket, Composer , Docker.
+            </li>
+            <li>
+              Google Cloud Plataform, Visual Studio Code , WebStorm , Eclipse
+              photon - oxygen , Android Studio , AMPPS.
+            </li>
+            <li>Wordpress, PHPBB.</li>
+          </ul>
+        </div>
       </div>
-
       <div class="job job-3">
         <h3 id="workingarroundtitle">Working Arround the World</h3>
         <h6 id="gamerinfosub3" class="text-secondary">Entrepreneur</h6>
@@ -167,11 +171,16 @@
         </a>
       </div>
     </div>
+
   </main>
 
   <script src="js/main.js"></script>
 
   <footer id="main-footer">Copyright &copy; 2019</footer>
+
+  <script src="https://unpkg.com/pdfjs-dist@latest/build/pdf.min.js"></script>
+  <script src="./js/pdfViwer.js"></script>
+
 </body>
 
 </html>

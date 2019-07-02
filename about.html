@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/pdfViewer.css">
+  <link rel="stylesheet" href="css/pdfViewer.css" />
 </head>
 
 <body onload="about()">
@@ -56,8 +56,11 @@
     </nav>
   </header>
   <main id="about">
-    <h1 id="aboutTitle" class="lg-heading">About <span class="text-secondary"> Me </span></h1>
-    <h2 id="aboutSubTitle" class="sm-heading">Let me tell you a few things... <span>asdasd</span>
+    <h1 id="aboutTitle" class="lg-heading">
+      About <span class="text-secondary"> Me </span>
+    </h1>
+    <h2 id="aboutSubTitle" class="sm-heading">
+      Let me tell you a few things... <span>asdasd</span>
     </h2>
 
     <div class="about-info">
@@ -111,13 +114,14 @@
           the continuous improving, adapting and learning new functionalities
           I will be happy to work on a new project in your team.
         </p>
-        <h3 class="sm-heading"><a style="text-decoration: none" href="https://github.com/theduodecim"> Mas
-            Proyectos dentro de mi repositorio de Github <i class="fab fa-github-square"></i></a></h3>
+        <h3 class="sm-heading">
+          <a style="text-decoration: none" href="https://github.com/theduodecim">
+            Mas Proyectos dentro de mi repositorio de Github
+            <i class="fab fa-github-square"></i></a>
+        </h3>
       </div>
       <div class="job job-2">
-        <button style="cursor: pointer;" id="pdfOpen" hidden>Open CV</button>
-        <div id="pdfBox">
-        </div>
+        <div id="pdfBox"></div>
         <div id="workingEnv">
           <h3 id="gamerinfotitle2">Programmer</h3>
           <h6 id="gamerinfosub2" class="text-secondary">Solution Provider</h6>
@@ -133,8 +137,8 @@
               CSS, SCSS, Material , Materialize , Bootstrap 3, 4, Phaser 3.
             </li>
             <li>
-              NodeJS, Apache , nginx , Ajax , Mysql , mariaDB , JSON , Firebase
-              , FireStore , GIT , Bitbucket, Composer , Docker.
+              NodeJS, Apache , nginx , Ajax , Mysql , mariaDB , JSON ,
+              Firebase , FireStore , GIT , Bitbucket, Composer , Docker.
             </li>
             <li>
               Google Cloud Plataform, Visual Studio Code , WebStorm , Eclipse
@@ -143,24 +147,27 @@
             <li>Wordpress, PHPBB.</li>
           </ul>
         </div>
+        <h3 style="padding-left: 35%; padding-right: 35%" class="sm-heading">
+          <button style="cursor: pointer;" id="pdfOpen" hidden>Open CV</button>
+        </h3>
       </div>
       <div class="job job-3">
         <h3 id="workingarroundtitle">Working Arround the World</h3>
         <h6 id="gamerinfosub3" class="text-secondary">Entrepreneur</h6>
         <p id="workingarround">
           Working arround the world with clients from Honduras, Argentina,
-          Germany, Puerto Rico. Professionally Speaking with order and clarity &
-          Professionally Structure Programming writing.
+          Germany, Puerto Rico. Professionally Speaking with order and clarity
+          & Professionally Structure Programming writing.
         </p>
 
         <ul>
           <button id="mintec"></button>
         </ul>
-        <br>
+        <br />
         <ul>
           <button id="naiades"></button>
         </ul>
-        <br>
+        <br />
         <ul>
           <button id="nivaxel"></button>
         </ul>
@@ -171,16 +178,14 @@
         </a>
       </div>
     </div>
-
   </main>
 
   <script src="js/main.js"></script>
 
   <footer id="main-footer">Copyright &copy; 2019</footer>
 
-  <script src="https://unpkg.com/pdfjs-dist@latest/build/pdf.min.js"></script>
+  <script src="lib/pdf.js"></script>
   <script src="./js/pdfViwer.js"></script>
-
 </body>
 
 </html>

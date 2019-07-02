@@ -13,6 +13,7 @@
 }
 
 #toolbar button,
+#toolbar a,
 #page-mode input {
     color: currentColor;
     background-color: transparent;

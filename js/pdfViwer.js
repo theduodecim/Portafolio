@@ -47,6 +47,7 @@ const pdfTemplate = `
   </div>
   <div>
     <button style="cursor: pointer;" id="pdfClose">Close</button>
+    <a href="./assets/presentation_Juan.pdf" download="Presentacion_JuanSebastian_Cabrera">Download</a>
   </div>
 </div>
 <div id="viewport-container">
@@ -80,7 +81,9 @@ const workingEnvTemplate = `
 </ul>
 `;
 
-
+function pdfViewDownload() {
+    window.open(this.url + '#pdfjs.action=download', '_parent');
+}
 
 //Managing to have a pdf with many pages 
 function render() {

@@ -54,6 +54,10 @@ const workSubTitle = document.getElementById("workSubTitle");
 const contactTitle = document.getElementById("contactTitle");
 const en = document.querySelector(".en");
 const esp = document.getElementById("esp");
+const duodecimStudiobutton = document.getElementById("duodecimStudiobutton");
+const trekkiebutton = document.getElementById("trekkiebutton");
+
+
 
 const navItems = document.querySelectorAll(".nav-item"); // selecting all & putting all the elements in a nodelist array
 // Set Iniitial State Of Menu (here will set the animation of the state if is true do something)
@@ -371,3 +375,28 @@ function gamerOff() {
   localStorage.removeItem("gamer");
   window.location.reload(true);
 }
+
+
+duodecimStudiobutton.addEventListener("click", function () {
+  trekkie.innerHTML = `Creator of DuodecimStudio, DuodecimStudio
+    Was developed from the ground to make a simple interaction with the client and obtain the best customization
+    for the new site to be developed. <br>
+    By utilizing the tools: figma, google forms, google presentations. <br>
+    The site was developed in Angular 8 Framework for the Front-End & for the Back-End nodeJS & Wordpress. <br>
+    <br>
+    <a href="https://duodecimstudio.website/?utm_source=portfolio&utm_medium=portfolio&utm_campaign=portfolio_Promo&utm_term=Promotion">www.duodecimStudio.website</a>`
+});
+
+trekkiebutton.addEventListener("click", function () {
+  trekkie.innerHTML = `Creator of trekkiechat, an application made in Ionic, with the 
+    following specifications: Start of internal session and registration
+    with Firebase. Google authentication to store in your profile
+    Personal images and edit your name. Chat in real time with all
+    registered users, they can also add friends to chat individually.
+    This application uses Firebase RealTimeDatebase to host users,
+    request, chats and images. I made this application in two months and
+    the continuous improving, adapting and learning new functionalities
+    I will be happy to work on a new project in your team. <br>
+    <br>
+    <a href="https://play.google.com/store/apps/details?id=com.TrekkieChat.App&hl=en">Google Play Trekkie Chat</a>  `
+});

@@ -18,6 +18,6 @@
     "aws-sign2": "^0.7.0",
     "bourbon": "^5.1.0",
     "gh-pages": "^2.2.0",
-    "node-sass": "^4.11.0"
+    "node-sass": "^7.0.0"
   }
 }
